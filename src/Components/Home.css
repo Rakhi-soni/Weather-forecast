@@ -1,0 +1,120 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mulish&family=Oswald:wght@300&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Mulish&family=Oswald:wght@300&family=Source+Sans+Pro&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main{
+    background: url(../images/weather-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+ .l-part{
+    width:73% ;
+    height: 100%;
+    position: relative;
+    
+ }
+ .datentime{
+    
+    float: right;
+    margin-right: 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    color:rgb(195, 216, 218)  ;
+ }
+ .datentime :nth-child(2){
+    color: gray;
+    font-size: 20px;
+ }
+
+ .text{
+    
+    bottom: 220px;
+    right: 40px;
+    position: absolute;
+    font-size: 60px;
+    background: linear-gradient( rgb(227, 238, 239) , rgb(123, 157, 181));
+    -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+    
+
+ }
+ .divider{
+    border-bottom: 3px solid rgba(90, 177, 197, 0.4); 
+    width: 93%;
+    margin-top: 480px;
+    margin-left: 35px;
+    /* position: absolute; */
+     
+    
+ }
+
+ .r-part{
+    width: 27%;
+    height: 100%;
+    
+    color: antiquewhite;
+    background-color: rgb(47, 39, 39); /* Fallback color */
+    background-color: rgba(60, 82, 87, 0.4); 
+    border-left: 0.5px solid rgba(90, 177, 197, 0.4);
+ }
+
+ @media  screen and (max-width: 568px){
+   
+   .l-part{
+      width: 0;
+   }
+   .r-part{
+      width: 100%;
+   }
+   .T-section{
+      color: rgb(48, 47, 47);
+   }
+
+   
+ }
+ @media  screen and (min-width:568px){
+   .l-part{
+      width: 50%;
+   }
+   .r-part{
+      width: 50%;
+   }
+   .text{
+      bottom: 350px;
+   }
+   .T-main{
+      display: none;
+   }
+     
+ }
+ @media  screen and (min-width:1091px){
+   .l-part{
+      width: 73%;
+   }
+   .r-part{
+      width: 27%;
+   }
+   .T-main{
+      display: flex;
+       
+      
+   }
+ }
