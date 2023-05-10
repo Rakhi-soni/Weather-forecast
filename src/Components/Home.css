@@ -90,7 +90,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
    
  }
- @media  screen and (min-width:568px){
+ @media  screen and (min-width:568px) and (max-width:1300px){
    .l-part{
       width: 50%;
    }
@@ -105,6 +105,7 @@ font-family: 'Source Sans Pro', sans-serif;
    }
      
  }
+
  @media  screen and (min-width:1091px){
    .l-part{
       width: 73%;
@@ -118,3 +119,4 @@ font-family: 'Source Sans Pro', sans-serif;
       
    }
  }
+ 
